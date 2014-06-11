@@ -13,6 +13,8 @@ Requires:   dmidecode
 Requires:   curl
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
+%define debug_package %{nil}
+
 %description
 A tool to probe for hardware, check its operability and load result
 to the ROSA hardware DB.
@@ -36,4 +38,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc README
 %{_bindir}/%{name}
-# %{_datadir}/%{name}
