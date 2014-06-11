@@ -1,5 +1,5 @@
 Summary:	ROSA Hardware Probe Tool
-Name:		rosa-hw-probe
+Name:		hw-probe
 Version:	0.1
 Release:	1
 Group:		Development/Other
@@ -18,7 +18,7 @@ A tool to probe for hardware, check its operability and load result
 to the ROSA hardware DB.
 
 %prep
-%setup -q
+%setup -q -n rosa-hw-probe-%{version}
 chmod 0644 README
 
 %build
@@ -36,4 +36,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc README
 %{_bindir}/%{name}
-%{_datadir}/%{name}
+# %{_datadir}/%{name}
