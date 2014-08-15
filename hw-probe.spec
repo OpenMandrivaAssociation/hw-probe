@@ -1,17 +1,16 @@
 Summary:	ROSA Hardware Probe Tool
 Name:		hw-probe
 Version:	0.6
-Release:	1
+Release:	2
 Group:		Development/Other
 License:	GPLv1+ or LGPLv2+
 URL:		http://hw.rosalinux.ru
 Source0:	rosa-hw-probe-%{version}.tar.gz
 Requires:	hwinfo
+Requires:   dmidecode
 Requires:	pciutils
 Requires:   usbutils
-Requires:   dmidecode
-Requires:   edid-decode
-Requires:   monitor-edid
+Requires:   pnputils
 Requires:   curl
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
