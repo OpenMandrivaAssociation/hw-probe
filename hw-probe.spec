@@ -1,7 +1,7 @@
 Summary:	ROSA Hardware Probe Tool
 Name:		hw-probe
-Version:	0.6
-Release:	2
+Version:	0.7
+Release:	1
 Group:		Development/Other
 License:	GPLv1+ or LGPLv2+
 URL:		http://hw.rosalinux.ru
