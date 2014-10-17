@@ -1,6 +1,7 @@
 sources:
-  "rosa-hw-probe-0.8.tar.gz": 2f29907616f93ab1e293bd3e6bddfffd7c5419b5
+  "rosa-hw-probe-0.8.1.tar.gz": a15de0645d57fabe07cb90c0f6da9eea212172cd
 old:
+  "rosa-hw-probe-0.8.tar.gz": 2f29907616f93ab1e293bd3e6bddfffd7c5419b5
   "rosa-hw-probe-0.7.1.tar.gz": 029a463bb0d45255caeaccb516a9ce1d53abeb6b
   "rosa-hw-probe-0.7.tar.gz": 8128a3749384a33a731521118687b220cb97876a
   "rosa-hw-probe-0.6.tar.gz": e08852c9df8e146e8819a124328909cf2df22088

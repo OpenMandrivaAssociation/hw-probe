@@ -1,6 +1,6 @@
 Summary:	ROSA Hardware Probe Tool
 Name:		hw-probe
-Version:	0.8
+Version:	0.8.1
 Release:	1
 Group:		Development/Other
 License:	GPLv1+ or LGPLv2+
