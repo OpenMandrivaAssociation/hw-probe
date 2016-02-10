@@ -1,41 +1,39 @@
-Summary:	ROSA Hardware Probe Tool
-Name:		hw-probe
-Version:	0.8.1
-Release:	1
-Group:		Development/Other
-License:	GPLv1+ or LGPLv2+
-URL:		http://hw.rosalinux.ru
-Source0:	rosa-hw-probe-%{version}.tar.gz
-Requires:	hwinfo
-Requires:   dmidecode
-Requires:	pciutils
-Requires:   usbutils
-Requires:   pnputils
-Requires:   curl
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 %define debug_package %{nil}
+
+Summary:	Hardware Probe Tool
+Name:		hw-probe
+Version:	1.0
+Release:	0.1
+Group:		System/Base
+License:	GPLv1+ or LGPLv2+
+URL:		https://github.com/linuxhw/hw-probe
+Source0:	%{name}-%{version}.tar.gz
+Requires:	hwinfo
+Requires:	dmidecode
+Requires:	pciutils
+Requires:	usbutils
+Requires:	pnputils
+Requires:	curl
+Requires:	perl
+Requires:	hdparm
+Requires:	smartmontools
+Requires:	inxi
+Requires:	pnputils
 
 %description
 A tool to probe for hardware, check its operability and load result
-to the ROSA hardware DB.
+to http://linux-hardware.org .
 
 %prep
-%setup -q -n rosa-hw-probe-%{version}
-chmod 0644 README
+%setup -q
 
 %build
 # Nothing to build yet
 
 %install
-rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_prefix}
 perl Makefile.pl -install --prefix=%{_prefix} --destdir=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root,-)
 %doc README
 %{_bindir}/%{name}
