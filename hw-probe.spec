@@ -2,7 +2,7 @@
 
 Summary:	Hardware Probe Tool
 Name:		hw-probe
-Version:	1.0
+Version:	1.2
 Release:	1
 Group:		System/Base
 License:	GPLv1+ or LGPLv2+
