@@ -35,5 +35,4 @@ mkdir -p %{buildroot}%{_prefix}
 perl Makefile.pl -install --prefix=%{_prefix} --destdir=%{buildroot}
 
 %files
-%doc README
 %{_bindir}/%{name}
