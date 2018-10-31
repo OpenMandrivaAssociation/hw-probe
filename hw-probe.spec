@@ -3,7 +3,7 @@
 Summary:	Hardware Probe Tool
 Name:		hw-probe
 Version:	1.4
-Release:	1
+Release:	2
 Group:		System/Base
 License:	GPLv1+ or LGPLv2+
 URL:		https://github.com/linuxhw/hw-probe
