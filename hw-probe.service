@@ -1,0 +1,15 @@
+[Unit]
+Description=Probe hardware and upload result to Linux hardware database
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/hw-probe -all -upload
+IOSchedulingClass=idle
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+
+PrivateTmp=true
+PrivateDevices=true
+PrivateNetwork=true
+ProtectSystem=true
