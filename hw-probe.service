@@ -8,8 +8,5 @@ IOSchedulingClass=idle
 Nice=19
 IOSchedulingClass=2
 IOSchedulingPriority=7
-
-PrivateTmp=true
-PrivateDevices=true
-PrivateNetwork=true
-ProtectSystem=true
+ProtectSystem=full
+StandardOutput=null
