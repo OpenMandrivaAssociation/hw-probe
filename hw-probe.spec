@@ -18,7 +18,7 @@ Requires:	usbutils
 Requires:	curl
 Requires:	perl
 Requires:	perl(Digest::SHA)
-Requires:	perl(Data::DUmper)
+Requires:	perl(Data::Dumper)
 Requires:	hdparm
 Requires:	smartmontools
 Requires:	inxi
