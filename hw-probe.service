@@ -1,6 +1,7 @@
 [Unit]
 Description=Probe hardware and upload result to Linux hardware database
 ConditionVirtualization=!container
+After=local-fs.target
 
 [Service]
 Type=idle
