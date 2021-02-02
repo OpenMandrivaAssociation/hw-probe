@@ -1,5 +1,6 @@
 [Unit]
 Description=Probe hardware and upload result to Linux hardware database
+ConditionVirtualization=!container
 
 [Service]
 Type=idle
