@@ -3,7 +3,7 @@
 Summary:	Check operability of computer hardware and find drivers
 Name:		hw-probe
 Version:	1.5
-Release:	3
+Release:	4
 Group:		System/Base
 License:	LGPLv2+
 URL:		https://github.com/linuxhw/hw-probe
@@ -42,6 +42,7 @@ Suggests:	sane-backends
 Suggests:	hplip
 Suggests:	numactl
 %endif
+%systemd_requires
 
 %description
 A tool to probe for hardware, check operability and find drivers
@@ -66,6 +67,12 @@ install -d %{buildroot}%{_presetdir}
 cat > %{buildroot}%{_presetdir}/86-%{name}.preset << EOF
 enable %{name}.timer
 EOF
+
+%post
+%systemd_post %{name}.timer
+
+%postun
+%systemd_postun %{name}.timer
 
 %files
 %{_bindir}/%{name}
