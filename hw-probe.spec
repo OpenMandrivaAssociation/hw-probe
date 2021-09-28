@@ -2,8 +2,8 @@
 
 Summary:	Check operability of computer hardware and find drivers
 Name:		hw-probe
-Version:	1.5
-Release:	5
+Version:	1.6
+Release:	1
 Group:		System/Base
 License:	LGPLv2+
 URL:		https://github.com/linuxhw/hw-probe
@@ -48,7 +48,7 @@ Suggests:	numactl
 A tool to probe for hardware, check operability and find drivers
 with the help of Linux Hardware Database.
 
-WWW: http://linux-hardware.org/
+WWW: https://linux-hardware.org/
 
 %prep
 %autosetup -p1
