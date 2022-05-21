@@ -2,7 +2,7 @@
 
 Summary:	Check operability of computer hardware and find drivers
 Name:		hw-probe
-Version:	1.6.2
+Version:	1.6.4
 Release:	1
 Group:		System/Base
 License:	LGPLv2+
