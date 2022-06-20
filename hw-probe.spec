@@ -2,12 +2,12 @@
 
 Summary:	Check operability of computer hardware and find drivers
 Name:		hw-probe
-Version:	1.6.2
+Version:	1.6.4
 Release:	1
 Group:		System/Base
 License:	LGPLv2+
 URL:		https://github.com/linuxhw/hw-probe
-Source0:	https://github.com/linuxhw/hw-probe/archive/%{name}-%{version}.tar.gz
+Source0:	https://github.com/linuxhw/hw-probe/archive/refs/tags/%{version}.tar.gz
 Source1:	hw-probe.service
 Source2:	hw-probe.timer
 BuildRequires:	systemd-rpm-macros
