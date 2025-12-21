@@ -10,6 +10,7 @@ URL:		https://github.com/linuxhw/hw-probe
 Source0:	https://github.com/linuxhw/hw-probe/archive/refs/tags/%{version}.tar.gz
 Source1:	hw-probe.service
 Source2:	hw-probe.timer
+BuildRequires:	make
 BuildRequires:	systemd-rpm-macros
 Requires:	hwinfo
 Requires:	dmidecode
