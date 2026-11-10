@@ -3,7 +3,7 @@
 Summary:	Check operability of computer hardware and find drivers
 Name:		hw-probe
 Version:	1.6.6
-Release:	2
+Release:	3
 Group:		System/Base
 License:	LGPLv2+
 URL:		https://github.com/linuxhw/hw-probe
